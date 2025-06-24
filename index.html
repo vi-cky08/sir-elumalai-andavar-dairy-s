@@ -10,6 +10,7 @@
   <style>
     body {
       font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to bottom right, #f0fdfa, #e0f2fe);
     }
     .hover-card {
       transition: transform 0.5s ease, box-shadow 0.5s ease;
@@ -18,92 +19,120 @@
       transform: scale(1.03);
       box-shadow: 0 20px 35px rgba(0, 0, 0, 0.2);
     }
+    .whatsapp-float {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 50;
+    }
+    .whatsapp-float img {
+      width: 60px;
+      height: 60px;
+    }
   </style>
 </head>
-<body class="bg-gray-50 text-gray-800">
-  <header class="bg-white shadow p-4 text-center">
-    <h1 class="text-2xl font-bold text-blue-700">Sri Elumalai Andavar Dairy Machineries</h1>
+<body class="text-gray-800">
+  <header class="bg-white shadow p-4 text-center rounded-b-3xl">
+    <h1 class="text-3xl font-bold text-sky-700">Sri Elumalai Andavar Dairy Machineries</h1>
     <p class="text-sm text-gray-500 mt-1">Trusted Machinery for Smart Farming</p>
   </header>
 
   <section class="mt-8 px-4">
-    <h2 class="text-xl font-semibold text-center text-gray-700 mb-6">Our Products</h2>
+    <h2 class="text-xl font-semibold text-center text-slate-700 mb-6">Our Products</h2>
     <div class="grid md:grid-cols-2 gap-6">
-
       <!-- Product 1 -->
-      <div class="bg-white rounded-xl shadow p-4 hover-card" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000" data-aos-offset="150">
+      <div class="bg-white rounded-xl shadow p-4 hover-card" data-aos="fade-up" data-aos-delay="100">
         <div class="aspect-video overflow-hidden rounded mb-4">
           <img src="image/agricultural spray.jpg" alt="Battery Sprayer" class="w-full h-full object-cover" />
         </div>
-        <h3 class="text-lg font-bold text-blue-600">Battery Sprayer</h3>
+        <h3 class="text-lg font-bold text-sky-600">Battery Sprayer</h3>
         <p class="text-sm text-gray-700 mt-2">Portable sprayer for farms — efficient pesticide and fertilizer application.</p>
       </div>
 
       <!-- Product 2 -->
-      <div class="bg-white rounded-xl shadow p-4 hover-card" data-aos="zoom-in" data-aos-delay="200" data-aos-duration="1000" data-aos-offset="150">
+      <div class="bg-white rounded-xl shadow p-4 hover-card" data-aos="zoom-in" data-aos-delay="200">
         <div class="aspect-video overflow-hidden rounded mb-4">
           <img src="image/manual seed drill.jpg" alt="Fertilizer Seeder" class="w-full h-full object-cover" />
         </div>
-        <h3 class="text-lg font-bold text-blue-600">Fertilizer Seeder</h3>
+        <h3 class="text-lg font-bold text-sky-600">Fertilizer Seeder</h3>
         <p class="text-sm text-gray-700 mt-2">Helps sow seeds and fertilize fields with precision and ease.</p>
       </div>
 
       <!-- Product 3 -->
-      <div class="bg-white rounded-xl shadow p-4 hover-card" data-aos="flip-up" data-aos-delay="300" data-aos-duration="1000" data-aos-offset="150">
+      <div class="bg-white rounded-xl shadow p-4 hover-card" data-aos="flip-up" data-aos-delay="300">
         <div class="aspect-video overflow-hidden rounded mb-4">
           <img src="image/cow lifting machine.jpg" alt="Cow Lifting Machine" class="w-full h-full object-cover" />
         </div>
-        <h3 class="text-lg font-bold text-blue-600">Cow Lifting Machine</h3>
+        <h3 class="text-lg font-bold text-sky-600">Cow Lifting Machine</h3>
         <p class="text-sm text-gray-700 mt-2">Used to safely lift cows and large livestock for treatment or transport.</p>
       </div>
 
       <!-- Product 4 -->
-      <div class="bg-white rounded-xl shadow p-4 hover-card" data-aos="slide-left" data-aos-delay="400" data-aos-duration="1000" data-aos-offset="150">
+      <div class="bg-white rounded-xl shadow p-4 hover-card" data-aos="slide-left" data-aos-delay="400">
         <div class="aspect-video overflow-hidden rounded mb-4">
-          <img src="image/cow lifting machine.jpg" alt="Power Tiller" class="w-full h-full object-cover" />
+          <img src="image/power tiller.jpg" alt="Power Tiller" class="w-full h-full object-cover" />
         </div>
-        <h3 class="text-lg font-bold text-blue-600">Power Tiller</h3>
+        <h3 class="text-lg font-bold text-sky-600">Power Tiller</h3>
         <p class="text-sm text-gray-700 mt-2">High-performance tiller for ploughing fields efficiently.</p>
       </div>
 
       <!-- Product 5 -->
-      <div class="bg-white rounded-xl shadow p-4 hover-card" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000" data-aos-offset="150">
+      <div class="bg-white rounded-xl shadow p-4 hover-card" data-aos="fade-up" data-aos-delay="500">
         <div class="aspect-video overflow-hidden rounded mb-4">
           <img src="image/chaff cutter.jpg" alt="Chaff Cutter" class="w-full h-full object-cover" />
         </div>
-        <h3 class="text-lg font-bold text-blue-600">Chaff Cutter</h3>
+        <h3 class="text-lg font-bold text-sky-600">Chaff Cutter</h3>
         <p class="text-sm text-gray-700 mt-2">Cuts fodder into small pieces for feeding livestock.</p>
       </div>
 
       <!-- Product 6 -->
-      <div class="bg-white rounded-xl shadow p-4 hover-card" data-aos="zoom-in" data-aos-delay="600" data-aos-duration="1000" data-aos-offset="150">
+      <div class="bg-white rounded-xl shadow p-4 hover-card" data-aos="zoom-in" data-aos-delay="600">
         <div class="aspect-video overflow-hidden rounded mb-4">
           <img src="image/heavy duty milking.jpg" alt="Milking Machine (Portable)" class="w-full h-full object-cover" />
         </div>
-        <h3 class="text-lg font-bold text-blue-600">Milking Machine (Portable)</h3>
+        <h3 class="text-lg font-bold text-sky-600">Milking Machine (Portable)</h3>
         <p class="text-sm text-gray-700 mt-2">Hygienic and easy milking with less labor.</p>
       </div>
 
       <!-- Product 7 -->
-      <div class="bg-white rounded-xl shadow p-4 hover-card" data-aos="flip-up" data-aos-delay="700" data-aos-duration="1000" data-aos-offset="150">
+      <div class="bg-white rounded-xl shadow p-4 hover-card" data-aos="flip-up" data-aos-delay="700">
         <div class="aspect-video overflow-hidden rounded mb-4">
           <img src="image/petrol engine milking.jpg" alt="Milking Machine (Advanced)" class="w-full h-full object-cover" />
         </div>
-        <h3 class="text-lg font-bold text-blue-600">Milking Machine (Advanced)</h3>
+        <h3 class="text-lg font-bold text-sky-600">Milking Machine (Advanced)</h3>
         <p class="text-sm text-gray-700 mt-2">Heavy-duty milking solution for dairy farms, includes dual motor system.</p>
       </div>
-
     </div>
   </section>
 
-  <footer class="bg-white text-center p-6 mt-10 shadow-inner">
-    <h3 class="text-lg font-bold text-blue-700 mb-2">Contact Us</h3>
-    <p class="text-sm text-gray-700">
-      📞 Phone: <a href="tel:+918667225046" class="text-blue-600 hover:underline">+918667225046</a><br>
-      💬 WhatsApp: <a href="https://wa.me/+918667225046" target="_blank" class="text-green-600 hover:underline">Chat on WhatsApp</a><br>
-      📍 Address: no.3 Sri Elumalai Andavar dairy machinerss, NH 77, by pass, Edapalayam, Tiruvannamalai, Tamil Nadu 606601
-    </p>
-    <p class="text-xs text-gray-400 mt-4">&copy; 2025 Sri Elumalai Andavar Dairy Machineries. All rights reserved.</p>
+  <!-- Contact Section -->
+  <section class="mt-12 px-4" data-aos="fade-up">
+    <h2 class="text-xl font-semibold text-center text-sky-700 mb-4">Contact Us</h2>
+    <div class="bg-white p-6 rounded-xl shadow max-w-xl mx-auto">
+      <p class="text-sm text-slate-700">
+        📞 Phone: <a href="tel:+918667225046" class="text-sky-600 hover:underline">+918667225046</a><br>
+        💬 WhatsApp: <a href="https://wa.me/+918667225046" target="_blank" class="text-green-600 hover:underline">Chat on WhatsApp</a><br>
+        📍 Address: no.3 Sri Elumalai Andavar dairy machinerss, NH 77, by pass, Edapalayam, Tiruvannamalai, Tamil Nadu 606601
+      </p>
+    </div>
+  </section>
+
+  <!-- Google Map Embed -->
+  <section class="mt-10 px-4" data-aos="fade-up">
+    <div class="max-w-4xl mx-auto rounded overflow-hidden shadow">
+      <iframe class="w-full h-64" frameborder="0" style="border:0"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3915.824297121732!2d77.72798257481927!3d11.340144250686395!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3babf0096f4c7b6b%3A0xcdf77f3ae07d96b0!2sErode%2C%20Tamil%20Nadu!5e0!3m2!1sen!2sin!4v1718623700000"
+        allowfullscreen></iframe>
+    </div>
+  </section>
+
+  <!-- Floating WhatsApp Button -->
+  <a href="https://wa.me/919876543210" target="_blank" class="whatsapp-float">
+    <img src="https://img.icons8.com/color/96/000000/whatsapp--v1.png" alt="Chat on WhatsApp" />
+  </a>
+
+  <footer class="bg-white text-center p-6 mt-12 shadow-inner rounded-t-3xl">
+    <p class="text-xs text-gray-400">&copy; 2025 Sri Elumalai Andavar Dairy Machineries. All rights reserved.</p>
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
@@ -113,3 +142,4 @@
   </script>
 </body>
 </html>
+
